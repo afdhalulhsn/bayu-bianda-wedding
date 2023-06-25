@@ -189,6 +189,43 @@
 			</div>
 		</div>
 
+		<div id="fh5co-groom-bride">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h2>GIFT</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+								<p class="elementor-heading-title elementor-size-default">Kami sangat mengharapkan kehadiran Bapak/Ibu dalam acara pernikahan kami. <br>Sebagai bentuk sukacita Bapak/Ibu/Saudara/i dapat mengirimkan hadiah pernikahan melalui tombol berikut ini:</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="elementor-button-wrapper">
+							<!-- <input type="button" value="Toggle" onclick="toggle()"> -->
+
+							<a onclick="toggle()" role="button">
+								<i aria-hidden="true" class="fas fa-gifts"></i>			</span>
+										<span>Kirim Hadiah Kepada Mempelai</span>
+						</span>
+									</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div id="collapse" class="row hide">
+						<div class="container">
+							<div class="center">
+								<img src="images/qr.png" class="img-responsive">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div id="fh5co-gallery">
 			<div class="container">
 				<div class="row">
@@ -231,42 +268,6 @@
 			</div>
 		</div>
 
-		<div id="fh5co-groom-bride">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h2>GIFT</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 text-center">
-								<p class="elementor-heading-title elementor-size-default">Kami sangat mengharapkan kehadiran Bapak/Ibu dalam acara pernikahan kami. <br>Sebagai bentuk sukacita Bapak/Ibu/Saudara/i dapat mengirimkan hadiah pernikahan melalui tombol berikut ini:</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="elementor-button-wrapper">
-							<!-- <input type="button" value="Toggle" onclick="toggle()"> -->
-
-							<a onclick="toggle()" role="button">
-								<i aria-hidden="true" class="fas fa-gifts"></i>			</span>
-										<span>Kirim Hadiah Kepada Mempelai</span>
-						</span>
-									</a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div id="collapse" class="row hide">
-						<div class="container">
-							<div class="center">
-								<img src="images/qr.png" class="img-responsive">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 
 		
@@ -274,18 +275,7 @@
 		
 		<footer>
 			<div id="footer">
-				<!-- <div class="container">
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<h2>Bayu  &amp; Bianda</h2>
-						</div>
-						<div class="col-md-6 col-md-offset-3 text-center">
-							<p>Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
-								Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.</p>
-								<h3 style="color: #bf9b73">Wassalamu'alaikum Wr. Wb.</h3>
-							</div>
-					</div>
-				</div> -->
+		
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 text-center">
@@ -298,21 +288,17 @@
 							<p></p>
 							<br>
 							<h2>Bayu &amp; Bianda</h2>
-							<p>
-							<!-- <ul class="fh5co-social-icons">
-								<li><a target="_blank" href="https://github.com/maulidandev"><i class="icon-github"></i></a></li>
-								<li><a target="_blank" href="https://www.linkedin.com/in/maulidandev/"><i class="icon-linkedin"></i></a></li>
-								<li><a target="_blank" href="https://www.instagram.com/maulidannashuha/"><i class="icon-instagram"></i></a></li>
-								<li><a target="_blank" href="https://www.facebook.com/maulidannashuha"><i class="icon-facebook"></i></a></li>
-								<li><a target="_blank" href="https://twitter.com/ngodingsolusi"><i class="icon-twitter"></i></a></li>
-							</ul> -->
-							</p>
 						</div>
 				
 					</div>
 				</div>
 			</div>
 		</footer>
+		  
+
+		
+		  
+		  
 
 	
 
@@ -360,6 +346,27 @@
 		  }
 		}, 1000);
 		</script>
+
+<script>
+	// Function to change the image source dynamically
+function changeFooterImage() {
+  var footerImage = document.getElementById('footer-image');
+  var portraitImage = 'images/LANE0053.jpg';
+  var landscapeImage = 'images/LANE1300.jpg';
+
+  // Check if the orientation is portrait
+  if (window.matchMedia("(orientation: portrait)").matches) {
+    footerImage.src = portraitImage;
+  } else {
+    footerImage.src = landscapeImage;
+  }
+}
+
+// Call the function on page load and whenever the window is resized
+window.onload = changeFooterImage;
+window.addEventListener('resize', changeFooterImage);
+
+  </script>
 
 <!-- <script>
 	function myMap() {
