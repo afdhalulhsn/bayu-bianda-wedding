@@ -1,0 +1,60 @@
+@font-face {
+    font-family: jawapalsu;
+    src: url(JAWAPALSU.ttf);
+ }
+
+ h2 {
+    font-family: jawapalsu;
+    color: darkgoldenrod;
+}
+
+h2.white {
+    font-family: jawapalsu;
+    color: whitesmoke;
+}
+
+.jawa-style {
+    font-family: jawapalsu;
+    color: darkgoldenrod;
+}
+
+.jawa-style-white {
+    font-family: jawapalsu;
+    color: whitesmoke;
+    font-size: 70pt;
+}
+
+title {
+    font-family: jawapalsu;
+    color: darkgoldenrod;
+}
+
+.image_wrapper {
+    position: relative;
+  }
+
+  .overlay_2 {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  #collapse {   
+    /* (A3) CSS TRANSITION */
+    transition: all 0.5s;
+  }
+  
+  /* (B) HIDE */
+  #collapse.hide {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
