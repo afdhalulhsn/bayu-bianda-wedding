@@ -228,6 +228,29 @@
 						<h2>Wedding Gallery</h2>
 					</div>
 				</div>
+
+
+				
+
+				<div class="row">
+					<div class="container">
+						<div class="row">
+						  <div class="col-sm-12">
+							<h1 class="text-center display-4 mt-5">
+							  Solodev Web Design & Content Management Software
+							</h1>
+							<p class="text-center mt-5">
+							  <a href="#headerPopup" id="headerVideoLink" target="_blank" class="btn btn-outline-danger popup-modal">See Why Solodev WXP</a>
+							</p>
+							<div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+							  <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/SUD4_7IUDWM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+						  </div>
+						</div>
+					  </div>
+
+				</div>
+
 				<div class="row">
 					<div class="col-md-4">
 						<div class="gallery animate-box">
@@ -311,6 +334,14 @@
 }
 	</script>
 	<script>
+		$(document).ready(function() {
+  $('#headerVideoLink').magnificPopup({
+    type:'inline',
+    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  });         
+});
+	</script>
+	<script>
 		// Set the date we're counting down to
 		var countDownDate = new Date("Jul 09, 2023 08:00:00").getTime();
 		
@@ -355,4 +386,5 @@
 
 	</body>
 </html>
+
 
