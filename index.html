@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="css/font_jawa.css">
 	<title>Bayu &amp; Bianda</title>
   <style>
@@ -27,12 +28,12 @@
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 70pt;
       margin-bottom: 20px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 30pt;
       margin-bottom: 10px;
     }
 
@@ -60,8 +61,14 @@
 		</div>
 	</div>
     <h1>Kepada Yth.</h1>
-    <p id="receiverName" style="font-size: 30pt;"></p>
-    <a href="home.html" class="button">OPEN INVITATION</a>
+    <p id="receiverName" style="font-size: 50pt;"></p>
+    <a role="button" class="btn-invitattion" style="color: white;" onclick="toggle()">
+
+      <span class="color-icon">
+        <i aria-hidden="true" class="far fa-envelope-open"></i>
+      </span>
+      <span>Open Invitation</span>
+    </a>
   </div>
 
   <script>

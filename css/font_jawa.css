@@ -124,5 +124,16 @@ title {
     font-size: 25pt;
 }
 
+
+.btn-invitattion{
+  margin-top: 10px;
+  background-color: #808588;
+  border-radius: 20px;
+  padding: 15pt;
+  color: white;
+  font-size: 25pt;
+  border-radius: 5%;
+}
+
   
   
