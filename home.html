@@ -55,6 +55,27 @@
 	</head>
 	<body>
 
+		<!-- The modal popup -->
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p style="color: #bf9b73; display: block;">Tanpa mengurangi rasa hormat kami, para tamu undangan yang bersedia menghadiri acara ini dimohon untuk kesediannya dalam mematuhi protokol kesehatan yang berlaku. Terima kasih</p>
+				<div  class="col-md-12 text-center">
+					<div class="elementor-button-wrapper">
+						<!-- <input type="button" value="Toggle" onclick="toggle()"> -->
+
+						<a id="agreeBtn" role="button" class="btn-hadiah" style="color: white;">
+							<span class="color-icon">
+								<i aria-hidden="true"></i>
+							</span>
+							<span>Mengerti dan Lanjutkan</span>
+						</a>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+
 		
 		<div id="fh5co-wrapper">
 		<div id="fh5co-page">
@@ -229,27 +250,19 @@
 					</div>
 				</div>
 
-
-				
-
 				<div class="row">
+					
+					
 					<div class="container">
-						<div class="row">
-						  <div class="col-sm-12">
-							<h1 class="text-center display-4 mt-5">
-							  Solodev Web Design & Content Management Software
-							</h1>
-							<p class="text-center mt-5">
-							  <a href="#headerPopup" id="headerVideoLink" target="_blank" class="btn btn-outline-danger popup-modal">See Why Solodev WXP</a>
-							</p>
-							<div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
-							  <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/SUD4_7IUDWM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							</div>
-						  </div>
-						</div>
-					  </div>
-
-				</div>
+						<p>PREWEDDING VIDEO</p>
+	
+						<p></p>
+						
+						  <button class="popup-btn">Play</button>
+						  
+					</div>
+	
+					</div>
 
 				<div class="row">
 					<div class="col-md-4">
@@ -287,8 +300,25 @@
 		</div>
 
 
+		<div class="video-popup">
+			<div class="popup-bg"></div>
+			  <div class="popup-content">
+		<!--         <p class="popup-title">Youtube</p> -->
+				<iframe src="https://www.youtube.com/embed/dBXJk8wn8uM?autoplay=0" class="video"></iframe>
+				<button class="close-btn">close</button>
+			  </div>
+		  </div>
 
 		
+		  
+
+
+
+  <audio id="background-music" src="sound/backsound.mp3" autoplay  loop></audio>
+
+  <button id="music-button" onclick="toggleMusic()">
+    <i id="music-icon" class="fas fa-play"></i>
+  </button>
 
 		
 		<footer>
@@ -334,14 +364,6 @@
 }
 	</script>
 	<script>
-		$(document).ready(function() {
-  $('#headerVideoLink').magnificPopup({
-    type:'inline',
-    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-  });         
-});
-	</script>
-	<script>
 		// Set the date we're counting down to
 		var countDownDate = new Date("Jul 09, 2023 08:00:00").getTime();
 		
@@ -384,7 +406,89 @@
 	
 	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>		 -->
 
+	<script>
+		    var audio = document.getElementById('background-music');
+    var button = document.getElementById('music-button');
+    var icon = document.getElementById('music-icon');
+    var isPlaying = true;
+
+    function toggleMusic() {
+      if (isPlaying) {
+        audio.pause();
+        icon.classList.remove('fa-pause');
+        icon.classList.add('fa-play');
+      } else {
+        audio.play();
+        icon.classList.remove('fa-play');
+        icon.classList.add('fa-pause');
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
+	</script>
+
+	<script>
+		$(document).ready(function(){
+  
+  $('.popup-btn').on('click', function(){
+    $('.video-popup').fadeIn('slow');
+    return false;
+  });
+  
+  $('.popup-bg').on('click', function(){
+    $('.video-popup').slideUp('slow');
+    return false;
+  });
+  
+   $('.close-btn').on('click', function(){
+     $('.video-popup').fadeOut('slow');
+      return false;
+   });
+  
+});
+	</script>
+
+	<script>// Get the modal element
+
+	function palyMusic(){
+		var audio = document.getElementById('background-music');
+    var button = document.getElementById('music-button');
+    var icon = document.getElementById('music-icon');
+        audio.play();
+        icon.classList.remove('fa-play');
+        icon.classList.add('fa-pause');
+      }
+    
+		// Get the modal element
+var modal = document.getElementById("myModal");
+
+// Get the close button element
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Get the agree button element
+var agreeBtn = document.getElementById("agreeBtn");
+
+// Open the modal when the page loads
+window.onload = function() {
+    modal.style.display = "block";
+    document.body.classList.add("modal-open");
+}
+
+// Close the modal when the close button is clicked
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open");
+	palyMusic()
+}
+
+// Close the modal and allow access to the page when the agree button is clicked
+agreeBtn.onclick = function() {
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open");
+	palyMusic()
+}
+
+		</script>
+
 	</body>
 </html>
-
-

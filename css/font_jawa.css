@@ -1,148 +1,251 @@
 @font-face {
-    font-family: jawapalsu;
-    src: url(JAWAPALSU.ttf);
- }
+  font-family: jawapalsu;
+  src: url(JAWAPALSU.ttf);
+}
 
- p {
-    font-size: 30pt;
- }
+p {
+  font-size: 30pt;
+}
 
- h2 {
-    font-family: jawapalsu;
-    color: darkgoldenrod;
-    font-size: 50pt;
+h2 {
+  font-family: jawapalsu;
+  color: darkgoldenrod;
+  font-size: 50pt;
 }
 
 h2.white {
-    font-family: jawapalsu;
-    color: whitesmoke;
+  font-family: jawapalsu;
+  color: whitesmoke;
 }
 
 .jawa-style {
-    font-family: jawapalsu;
-    color: darkgoldenrod;
+  font-family: jawapalsu;
+  color: darkgoldenrod;
 }
 
 .jawa-style-white {
-    font-family: jawapalsu;
-    color: whitesmoke;
-    font-size: 70pt;
+  font-family: jawapalsu;
+  color: whitesmoke;
+  font-size: 70pt;
 }
 
 title {
-    font-family: jawapalsu;
-    color: darkgoldenrod;
+  font-family: jawapalsu;
+  color: darkgoldenrod;
 }
 
 .image_wrapper {
-    position: relative;
-  }
-
-  .overlay_2 {
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-
-  
-
-  #collapse {   
-    /* (A3) CSS TRANSITION */
-    transition: all 0.5s;
-    color: white;
-  }
-  
-  /* (B) HIDE */
-  #collapse.hide {
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    margin: 20pt;
-  }
-
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-
-
-  footer {
   position: relative;
-  height: 200px; /* Adjust the height as needed */
+}
+
+.overlay_2 {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+
+
+#collapse {   
+  /* (A3) CSS TRANSITION */
+  transition: all 0.5s;
+  color: white;
+}
+
+/* (B) HIDE */
+#collapse.hide {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 20pt;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+footer {
+position: relative;
+height: 200px; /* Adjust the height as needed */
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
 
 .overlay img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+width: 100%;
+height: auto;
+object-fit: cover;
 }
 
 
 
 .text-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .top {
-    top: 0;
-  }
-  
-  .bottom {
-    bottom: 0;
-  }
-  
-  .text {
-    color: white;
-    font-size: 24px; /* Adjust the font size as needed */
-    text-align: center;
-  }
-
-  .btn-hadiah{
-    margin-top: 10px;
-    background-color: #808588;
-    border-radius: 20px;
-    padding: 15pt;
-    color: white;
-    font-size: 25pt;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.top {
+  top: 0;
+}
 
+.bottom {
+  bottom: 0;
+}
 
-.btn-invitattion{
+.text {
+  color: white;
+  font-size: 24px; /* Adjust the font size as needed */
+  text-align: center;
+}
+
+.btn-hadiah{
   margin-top: 10px;
   background-color: #808588;
   border-radius: 20px;
   padding: 15pt;
   color: white;
   font-size: 25pt;
-  border-radius: 5%;
 }
 
-  
-#headerPopup{
-  width:75%;
-  margin:0 auto;
+
+
+.btn-invitattion{
+margin-top: 10px;
+background-color: #808588;
+border-radius: 20px;
+padding: 15pt;
+color: white;
+font-size: 25pt;
+border-radius: 5%;
 }
 
-#headerPopup iframe{
-  width:100%;
-  margin:0 auto;
-} 
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: lightgray; 
+  border-radius: 5px;
+}
+p {
+  text-align: center;
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.video {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  display: block;
+  border: none;
+}
+.popup-btn, .close-btn {
+  width: 100px;
+  height: 50px;
+  display: block;
+  margin: 50px auto;
+  cursor: pointer; 
+  border: 2px solid black;
+  background-color: white;
+}
+.popup-btn:hover {
+  color: white;
+  background-color: black;
+}
+.video-popup {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  boxshadow: 10px 10px 10px 10px black;
+}
+.popup-bg {
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.popup-content {
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: auto;
+}
+.popup-title {
+  padding: 30px;
+  margin: 0 auto;
+  color: red;
+  text-transform: uppercase;
+}
+
+
+#music-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 70pt;
+}
+
+/* Style for the modal popup */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: wheat;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
