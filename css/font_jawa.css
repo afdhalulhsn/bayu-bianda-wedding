@@ -3,9 +3,14 @@
     src: url(JAWAPALSU.ttf);
  }
 
+ p {
+    font-size: 30pt;
+ }
+
  h2 {
     font-family: jawapalsu;
     color: darkgoldenrod;
+    font-size: 50pt;
 }
 
 h2.white {
@@ -40,9 +45,12 @@ title {
     bottom: 0;
   }
 
+  
+
   #collapse {   
     /* (A3) CSS TRANSITION */
     transition: all 0.5s;
+    color: white;
   }
   
   /* (B) HIDE */
@@ -50,6 +58,8 @@ title {
     height: 0;
     opacity: 0;
     overflow: hidden;
+    transition: 0.5s;
+    margin: 20pt;
   }
 
   .center {
@@ -104,5 +114,15 @@ title {
     font-size: 24px; /* Adjust the font size as needed */
     text-align: center;
   }
+
+  .btn-hadiah{
+    margin-top: 10px;
+    background-color: #808588;
+    border-radius: 20px;
+    padding: 15pt;
+    color: white;
+    font-size: 25pt;
+}
+
   
   

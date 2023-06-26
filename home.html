@@ -27,7 +27,8 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -95,12 +96,12 @@
 					<div class="col-md-6 col-md-offset-3 text-center">
 						<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
 							<img src="images/LANE0621-modified.png" class="img-responsive">
-							<h3>Ferdika Bayu</h3>
+							<h3 style="font-size: 35pt;">Ferdika Bayu</h3>
 						</div>
 						<div class="col-md-2 col-sm-2 col-xs-2 nopadding"><h2 class="amp-center"><i class="icon-heart"></i></h2></div>
 						<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
 							<img src="images/LANE0654-modified.png" class="img-responsive">
-							<h3>Bianda Massies</h3>
+							<h3 style="font-size: 35pt;">Bianda Massies</h3>
 						</div>
 					</div>
 				</div>
@@ -112,32 +113,6 @@
 						</div>
 					</div>
 				</div>
-
-
-				
-				<!-- <div class="row row-bottom-padded-md">
-					<div class="col-md-6 text-center animate-box">
-						<div class="wedding-events">
-							<div class="ceremony-bg" style="background-image: url(images/wed-ceremony.jpg);"></div>
-							<div class="desc">
-								<h3>Akad Nikah</h3>
-								<p><strong>Saturday, December 28, 2017, 4.00 PM - 5.00PM @ Boracay Beach</strong></p>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 text-center animate-box">
-						<div class="wedding-events">
-							<div class="ceremony-bg" style="background-image: url(images/wed-party.jpg);"></div>
-							<div class="desc">
-								<h3>Resepsi</h3>
-								<p><strong>Saturday, December 28, 2017, 6.00 PM - 11.00PM @ Boracay Beach</strong></p>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							</div>
-						</div>
-					</div>
-				</div> -->
-
 				
 				<div class="row row-bottom-padded-md">
 					<div class="row">
@@ -206,15 +181,17 @@
 						<div class="elementor-button-wrapper">
 							<!-- <input type="button" value="Toggle" onclick="toggle()"> -->
 
-							<a onclick="toggle()" role="button">
-								<i aria-hidden="true" class="fas fa-gifts"></i>			</span>
-										<span>Kirim Hadiah Kepada Mempelai</span>
-						</span>
-									</a>
+							<a class="btn-hadiah" style="color: white;" onclick="toggle()">
+								<span class="color-icon">
+									<i aria-hidden="true" class="fas fa-gifts"></i>
+								</span>
+								<span>Kirim Hadiah Kepada Mempelai</span>
+							</a>
+						
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" style="padding: 30pt;">
 					<div id="collapse" class="row hide">
 						<div class="container">
 							<div class="center">
@@ -297,15 +274,13 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<p>
+							<p style="font-size: 25pt;">
 								Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
 								<br>Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.
 							</p>
-							<p>Wassalamu'alaikum Wr. Wb.</p>
-							<p>Jazakumullahu Khairan</p>
-							<p></p>
+							<p style="font-size: 20pt;">Wassalamu'alaikum Wr. Wb.</p>
+							<p style="font-size: 20pt;">Jazakumullahu Khairan</p>
 							<br>
-							<h2>Bayu &amp; Bianda</h2>
 						</div>
 				
 					</div>
@@ -365,26 +340,6 @@
 		}, 1000);
 		</script>
 
-<script>
-	// Function to change the image source dynamically
-function changeFooterImage() {
-  var footerImage = document.getElementById('footer-image');
-  var portraitImage = 'images/LANE0053.jpg';
-  var landscapeImage = 'images/LANE1300.jpg';
-
-  // Check if the orientation is portrait
-  if (window.matchMedia("(orientation: portrait)").matches) {
-    footerImage.src = portraitImage;
-  } else {
-    footerImage.src = landscapeImage;
-  }
-}
-
-// Call the function on page load and whenever the window is resized
-window.onload = changeFooterImage;
-window.addEventListener('resize', changeFooterImage);
-
-  </script>
 
 <!-- <script>
 	function myMap() {
