@@ -55,6 +55,8 @@
 	</head>
 	<body>
 
+		<div class="loader"></div>
+
 		<!-- The modal popup -->
 		<div id="myModal" class="modal">
 			<div class="modal-content">
@@ -488,6 +490,12 @@ agreeBtn.onclick = function() {
 	palyMusic()
 }
 
+		</script>
+
+		<script>
+			$(window).load(function(){
+     $('.loader').fadeOut(3000);
+});
 		</script>
 
 	</body>
