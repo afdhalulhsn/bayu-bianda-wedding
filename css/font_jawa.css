@@ -208,7 +208,13 @@ p {
   bottom: 20px;
   right: 20px;
   z-index: 9999;
-  font-size: 70pt;
+  font-size: 35pt;
+}
+
+.button-music {
+  border-radius: 40px;
+  width: 80px;
+  height: 80px;
 }
 
 /* Style for the modal popup */
